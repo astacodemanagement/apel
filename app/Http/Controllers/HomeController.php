@@ -133,8 +133,10 @@ class HomeController extends Controller
         $title = "Halaman Produk Detail";
         $subtitle = "Menu Produk Detail";
         $produk = Produk::where('slug', $slug)->firstOrFail();
-        $kategori_produk = KategoriProduk::all();
-        return view('front.produk_detail', compact('produk', 'kategori_produk', 'title', 'subtitle'));
+        // Mengambil kategori produk terkait
+        $kategori_produk_terkait = $produk->kategoriProduk;
+
+        return view('front.produk_detail', compact('produk', 'kategori_produk_terkait', 'title', 'subtitle'));
     }
 
     public function location() {
@@ -158,11 +160,11 @@ class HomeController extends Controller
         $subtitle = "Menu Berita";
         $berita = Berita::orderBy('urutan', 'asc')->paginate(10); // Batasi jumlah berita per halaman
         $kategoriBerita = KategoriBerita::all();
-    
+
         return view('front.blog.index', compact('title', 'subtitle', 'berita', 'kategoriBerita'));
     }
-    
-    
+
+
     public function blog_detail($slug) {
         $title = "Halaman Berita Detail";
         $subtitle = "Menu Berita Detail";
@@ -170,6 +172,6 @@ class HomeController extends Controller
         $kategoriBerita = KategoriBerita::all(); // Ambil semua kategori berita
         return view('front.blog.detail', compact('berita', 'title', 'subtitle','kategoriBerita'));
     }
-    
+
 
 }

@@ -471,7 +471,7 @@
               <img src="/upload/profil/{{ $profil->gambar }}" alt="logo" width="80px" class="hidden md:block">
 
               <span class="globalnav-image-compact globalnav-link-image">
-              
+
               </span>
               <span class="globalnav-link-text">Apple</span>
             </a>
@@ -484,23 +484,23 @@
               <nav>
                 <ul>
                 <li class="navParent">
-                    <a href="{{route('product')}}">product</a>
+                    <a href="{{route('product')}}">Product</a>
                     <div class="navChild">
-                    
+
                         <div class="navChildContainer">
                           <div class="wrapper w-full mt-3 " >
 
                             <ul>
-                           
+
                               <li>
                                 <a href="#" class="globalnav-submenu-link">Submenu1</a>
                               </li>
-                             
+
 
                             </ul>
                           </divc>
 
-                      
+
                       </div>
                     </div>
                   </li>
@@ -512,7 +512,7 @@
                   <li class="navParent">
                     <a href="/menu/{{$m->slug}}">{{ $m->name }}</a>
                     <div class="navChild">
-                    
+
                         <div class="navChildContainer">
                           <div class="wrapper w-full mt-3 " >
 
@@ -528,29 +528,29 @@
                             </ul>
                           </divc>
 
-                      
+
                       </div>
                     </div>
                   </li>
                   @endforeach
                   <li class="navParent">
-                    <a href="{{route('location')}}">location</a>
+                    <a href="{{route('location')}}">Location</a>
                     <div class="navChild">
-                    
+
                         <div class="navChildContainer">
                           <div class="wrapper w-full mt-3 " >
 
                             <ul>
-                           
+
                               <li>
                                 <a href="#" class="globalnav-submenu-link">Submenu1</a>
                               </li>
-                             
+
 
                             </ul>
                           </divc>
 
-                      
+
                       </div>
                     </div>
                   </li>
@@ -614,11 +614,11 @@
                 class="globalnav-link globalnav-link-bag">
                 <span class="globalnav-image-regular">
                 <img src="{{ asset('themplete/front') }}/images/wa.png" width="16" class="mb-1" alt="shopping">
- 
+
                 </span>
                 <span class="globalnav-image-compact">
               <img src="/upload/profil/{{ $profil->gambar }}" alt="logo" width="80px">
-               
+
                 </span>
               </a>
               <span aria-hidden="true" data-analytics-title="open - bag" class="globalnav-bag-badge"><span
@@ -728,7 +728,7 @@
       Design By {{ $profil->nama_perusahaan }} </p>
   </div>
   </div>
- 
+
   <!-- jquery cdn -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script>
