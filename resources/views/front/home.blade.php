@@ -45,7 +45,7 @@
         </div>
         @endforeach
 
-      
+
     </div>
 </div>
 <div class="mt-11 md:px-14 px-4 gap-5">
@@ -63,27 +63,30 @@
         @endforeach
     </div>
 </div>
-
 <div class="apple-events mt-8">
     <h1 class="text-2xl font-medium leading-5 tracking-wide mb-4">
         Let's Explore Apple Events Photos
     </h1>
-    <div class="event-pictures grid grid-cols-1 md:grid-cols-2 gap-4">
-        <div class="w-full">
-            <img src="{{ asset('themplete/front') }}/images/APPLE-EVENT-SEP-2023-WALLPAPER-mod1.jpg" alt="events" class="w-full h-auto object-cover rounded-lg shadow-lg">
+    <div class="grid grid-cols-12 gap-4">
+        <div class="col-span-6 flex justify-center">
+            <img src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MWR53?wid=1144&hei=1144&fmt=jpeg&qlt=90&.v=1713934300288" alt="events" class="w-full object-cover object-top rounded-lg shadow-lg">
         </div>
-        <div class="w-full">
-            <img src="{{ asset('themplete/front') }}/images/apple-event-wallpaper-iphone.png" alt="events" class="w-full h-auto object-cover rounded-lg shadow-lg">
+        <div class="col-span-6 flex justify-center">
+            <img src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MWR53?wid=1144&hei=1144&fmt=jpeg&qlt=90&.v=1713934300288" alt="events" class="w-full object-cover object-top rounded-lg shadow-lg">
         </div>
-        <div class="w-full">
-            <img src="{{ asset('themplete/front') }}/images/APPLE-EVENT-SEP-2023-WALLPAPER-mod1.jpg" alt="events" class="w-full h-auto object-cover rounded-lg shadow-lg">
+        <div class="col-span-6 flex justify-center">
+            <img src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MWR53?wid=1144&hei=1144&fmt=jpeg&qlt=90&.v=1713934300288" alt="events" class="w-full object-cover object-top rounded-lg shadow-lg">
         </div>
-        <div class="w-full">
-            <img src="{{ asset('themplete/front') }}/images/APPLE-EVENT-SEP-2023-WALLPAPER-mod1.jpg" alt="events" class="w-full h-auto object-cover rounded-lg shadow-lg">
+        <div class="col-span-6 flex justify-center">
+            <img src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MWR53?wid=1144&hei=1144&fmt=jpeg&qlt=90&.v=1713934300288" alt="events" class="w-full object-cover object-top rounded-lg shadow-lg">
         </div>
         <!-- Tambahkan lebih banyak gambar jika diperlukan -->
     </div>
 </div>
+
+
+
+
 
 
 <div class="owl-carousel owl-theme section-3 mt-8">
