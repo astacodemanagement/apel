@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Alasan;
 use App\Models\Berita;
+use App\Models\Galeri;
 use App\Models\KategoriBerita;
 use App\Models\KategoriProduk;
 
@@ -66,12 +67,13 @@ class HomeController extends Controller
             ->take(6)
             ->get();
 
+        $galeri = Galeri::all();
         $alasan = Alasan::all();
         $testimoni = Testimoni::all();
         $slider = Slider::all();
         $kategori_produk = KategoriProduk::all();
 
-        return view('front.home', compact('slider', 'title', 'subtitle', 'kategori_produk', 'produk', 'alasan', 'testimoni', 'produk_diskon'));
+        return view('front.home', compact('slider', 'galeri','title', 'subtitle', 'kategori_produk', 'produk', 'alasan', 'testimoni', 'produk_diskon'));
     }
 
 
